@@ -9,7 +9,7 @@ public class NthFiboNumber {
 		System.out.println("Enter number :");
 		int n=sc.nextInt();
 		int a=0,b=1;
-		int sum=a+b;
+		
 		int c=0;
 		for(int i=1;i<=n-1;i++ ) {
 			c=a+b;
