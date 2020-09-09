@@ -64,17 +64,18 @@ public class Solution {
      *
      */
     static void reversePrint(SinglyLinkedListNode head) {
+             if(head==null) return;
             SinglyLinkedListNode n=head;
-            SinglyLinkedListNode prev=null;
+           Stack<SinglyLinkedListNode> st=new Stack<>();
             while(n!=null){
-                SinglyLinkedListNode next_node=n.next;
-                n.next=prev;
-                prev=n;
-                n=next_node;
+                st.push(n);
+                n=n.next;
             }
-            while(prev.next!=null){
-                System.out.println(n.data);
-            }
+           while(!st.isEmpty()){
+               SinglyLinkedListNode node=st.pop();
+               
+               System.out.println(node.data);
+           }
 
     }
 
