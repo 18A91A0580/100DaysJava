@@ -17,6 +17,7 @@ public class AutomorphicNumber {
 				break;
 			}
 			n/=10;
+			sq/=10;
 		}
 		if(isAuto) System.out.println(temp+ " is Automorphic number");
 		else System.out.println(temp+ " is not Automorphic number");
